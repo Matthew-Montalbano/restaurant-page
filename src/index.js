@@ -9,10 +9,17 @@ const attachNavigationListeners = () => {
         let tab = tabs[i];
         console.log(tab);
         tab.addEventListener("click", () => {
+            switchActiveTabClass(tab);
             clearContent();
             renderFunctions[i]();
         });
     }
+}
+
+const switchActiveTabClass = (newTab) => {
+    const activeTab = document.querySelector(".active-tab");
+    activeTab.classList.remove("active-tab");
+    newTab.classList.add("active-tab");
 }
 
 const clearContent = () => {

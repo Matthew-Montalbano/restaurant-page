@@ -12,10 +12,14 @@ const renderRestaurantHeadline = (parentNode) => {
 }
 
 const renderImage = (parentNode) => {
+    const imageContainer = document.createElement("center");
+    imageContainer.classList.add("image-container");
     const image = document.createElement("img");
     image.src = "https://media-cdn.tripadvisor.com/media/photo-s/0c/e5/65/ca/inside-of-the-restaurant.jpg";
     image.href = "#";
-    parentNode.appendChild(image);
+    image.alt = "Restaurant Photo";
+    imageContainer.appendChild(image);
+    parentNode.appendChild(imageContainer);
 }
 
 const renderBiography = (parentNode) => {

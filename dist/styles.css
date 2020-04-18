@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    background-color: #f6f5f0;
+}
+
+nav {
+    display: flex;
+    background-color: #e55b7e;
+    padding-left: 10px;
+}
+
+.tab-block {
+    display: flex;
+    padding: 0px 10px 0px 10px;
+    margin-top: 30px;
+    height: 30px;
+    background-color: #948f47;
+}
+
+a {
+    align-self: flex-end;
+    text-decoration: none;
+    color: #f6f5f0;
+}
+
+.active-tab {
+    background-color: #3e5336;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    font-family: cursive;
+}
+
+img {
+    border: 3px solid black;
+}
+
+p {
+    margin-top: 100px;
+    padding: 0px 100px 0px 100px;
+    text-align: center;
+}

@@ -21,7 +21,7 @@ const addFieldsToForm = (form) => {
     for (let i = 0; i < fields.length; i++) {
         let label = document.createElement("label");
         label.htmlFor = fields[i].toLowerCase();
-        label.textContent = fields[i];
+        label.textContent = fields[i] + ": ";
         let input = document.createElement("input");
         input.id = fields[i].toLowerCase();
         label.appendChild(input);
